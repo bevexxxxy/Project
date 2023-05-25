@@ -1,0 +1,60 @@
+body {
+  margin: 200px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../css/фон.jpg");
+
+  
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #bbb;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px;
+  box-sizing: border-box;
+
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #aec69c;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
