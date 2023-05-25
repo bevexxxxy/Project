@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../css/фон.jpg");
+}
+
+header {
+  color: #000000;
+  padding: 20px;
+}
+
+header h1 {
+  white-space: nowrap;
+  margin: 0 800px;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin: center;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
