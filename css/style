@@ -1,0 +1,380 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+
+
+}
+
+*,
+*:before,
+*:after,{
+	box-sizing: border-box;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+hr{
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 40px 0;
+
+	border: 0;
+	background-color: #e5e5e5;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.telefon{
+	width: 300px;
+	height: 600px;
+}
+
+.telefon img {
+	width: 100%;
+}
+
+
+.intro {
+	height: 700px;
+	width: 100%;
+	padding: 230px 0 75px 0;
+
+	background-image: url("../css/фон.jpg");
+	
+}
+
+.intro .container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.intro__title{
+color: #000000;
+font-size: 90px;
+font-weight: 700;
+text-transform: uppercase;
+line-height: 1;
+}
+
+
+.intro__title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 60px auto ;
+
+	background-color: #000000;
+}
+
+
+
+
+
+.intro__inner {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.header {
+	width: 100%;
+padding-top: 30px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+
+
+
+.header__logo {
+	font-size: 28px;
+	font-weight: 700;
+	color: #000000;
+
+
+
+}
+
+.nav{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.nav__link{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+position: relative;
+
+color: #000000;
+text-decoration: none;
+
+transition:color .3s linear;
+}
+
+
+.nav__link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	
+
+	background-color: #aec69c;
+	opacity: 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1 ;
+
+	transition: opacity .3s linear;
+
+}
+
+
+.nav__link:hover {
+	color: #aec69c;
+}
+
+.nav__link:hover:after {
+	opacity: 1;
+}
+
+
+
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 40px;
+
+
+	border: 2px solid #000000;
+
+	font-size: 14px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: background .3s linear, color .3s linear;
+}
+
+.btn:hover {
+	background-color: #aec69c;
+	color: #000000;
+}
+
+
+.section {
+
+	padding: 80px 0;
+}
+
+.section__header{
+	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto 50px;
+	text-align: center;
+
+}
+
+
+.section__title{
+
+	font-size: 50px ;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.section__text:after {
+
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 30px auto;
+
+	background-color: #000000;
+
+}
+
+
+.section__text {
+	font-size: 18px ;
+	color: #000000;
+
+}
+
+
+.photo {
+margin-top: 80px;
+display: flex;
+justify-content: space-between;
+}
+
+.photo__item {
+width: 300px;
+position: relative;
+
+
+background-color: #85ffd6;
+}
+
+
+.photo__item:hover .about__img  {
+transform: translate3d(-10px, -10px, 0px);
+
+}
+
+
+
+
+.photo__item:hover .about__img img {
+	opacity: 0.1;
+
+}
+
+.photo__item:hover .about__text {
+	opacity: 1;
+}
+
+
+.about__img {
+	background: linear-gradient(to bottom, #aec69c, #85ffd6) ;
+
+	transition: transform .1s linear;
+}
+
+.about__img img {
+	display: block;
+transition: opacity .1s linear;
+}
+
+.about__text {
+width: 100%;
+
+color:#fff ;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+opacity: 0;
+
+position: absolute;
+top: 50%;
+left: 0;
+z-index: 2;
+transform: translate3d(0px, -50px, 0px) ;
+
+transition: opacity .2s linear;
+}
+
+
+
+
+.static {
+
+	background-color: #85ffd6;
+}
+
+.sta{
+display: flex;
+
+}
+
+.sta_item {
+flex: 1 1 0;
+padding: 70px 25px;
+border-left: 1px solid #fff;
+
+text-align: center;
+color: #000000;
+
+}
+
+.sta_item:last-child {
+border-right: 1px solid #fff;
+
+}
+
+.stat__count{
+	margin-bottom: 10px;
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.stat__text {
+font-size: 14px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+
+
+.reviews{
+display: flex;
+}
+
+.reviews__item{
+	flex: 1 1 0;
+	padding-left: 100px;
+	padding-right: 20px;
+	position: relative;
+}
+
+.reviews__icon{
+	position: absolute;
+	top: 0;
+	left: 20px;
+	z-index: 1;
+}
+
+.reviews__title{
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.reviews__text{
+	font-size: 15px;
+	color: #000000;
+}
+
+
+.footer{
+	padding: 90px;
+	background-color:#85ffd6 ;
+}
